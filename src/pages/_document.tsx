@@ -5,6 +5,10 @@ export default class extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <meta
+            name="description"
+            content="World Trip é um site de viagens pelo mundo, onde você pode escolher o continente e as cidades mais visitadas  para conhecer"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

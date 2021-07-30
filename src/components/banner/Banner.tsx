@@ -25,7 +25,12 @@ export const Banner = () => {
         </Box>
 
         <Box width="100%" height="100%" mt="20">
-          <Image src="/images/airplane.svg" alt="imagem de um avião amarelo" />
+          <Image
+            width="450px"
+            height="100%"
+            src="/images/airplane.svg"
+            alt="imagem de um avião amarelo"
+          />
         </Box>
       </Flex>
     </Box>

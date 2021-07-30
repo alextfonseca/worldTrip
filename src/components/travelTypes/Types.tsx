@@ -8,8 +8,14 @@ interface TypesProps extends TextProps {
 
 export const Types = ({ srcImage, altImage, text, ...rest }: TypesProps) => {
   return (
-    <Box>
-      <Image src={srcImage} alt={altImage} m="auto" />
+    <Box width="100%" height="100%">
+      <Image
+        width="100px"
+        height="100px"
+        src={srcImage}
+        alt={altImage}
+        m="auto"
+      />
       <Text
         {...rest}
         textAlign="center"
