@@ -1,9 +1,21 @@
-import { Flex, Image, Text, Box } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import { Types } from "./Types";
 
 export const TravelTypes = () => {
   return (
-    <Flex justify="space-between" px="200px" mt="80px">
+    <Grid
+      gridTemplateColumns={[
+        "repeat(2, 1fr)",
+        "repeat(2, 1fr)",
+        "repeat(2, 1fr)",
+        "repeat(5, 1fr)",
+      ]}
+      px={["20px", "30px", "200px"]}
+      mt="80px"
+      width="100%"
+      gap="8"
+      justify="center"
+    >
       <Types
         srcImage="/images/cocktail.svg"
         altImage="imagem de um cocktail amarelo"
@@ -33,6 +45,6 @@ export const TravelTypes = () => {
         altImage="imagem do planeta terra amarelo"
         text="e mais..."
       />
-    </Flex>
+    </Grid>
   );
 };

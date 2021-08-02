@@ -6,15 +6,10 @@ interface HeaderProps {
 
 export const Header = ({ isSlugPage = false }: HeaderProps) => {
   return (
-    <Flex maxWidth={1440} py="6" gap="80" align="center">
+    <Flex p={["6", "auto"]} align="center" m="auto" width="90%">
       {isSlugPage && (
         <Link href="/">
-          <Image
-            p="4"
-            src="/images/backToPage.svg"
-            alt="voltar para home"
-            textAlign="left"
-          />
+          <Image mr="50%" src="/images/backToPage.svg" alt="voltar para home" />
         </Link>
       )}
       <Link href="/" m="auto">

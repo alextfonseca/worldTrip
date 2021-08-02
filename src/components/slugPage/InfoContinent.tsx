@@ -7,9 +7,10 @@ interface InfoContinentProps {
 
 export const InfoContinent = ({ dataContinent, title }: InfoContinentProps) => {
   return (
-    <Box mr="10">
+    <Box p="4">
       <Text
-        fontSize="48px"
+        as="p"
+        fontSize={["24px", "36px", "48px"]}
         fontWeight="medium"
         color="yellow.200"
         textAlign="center"
@@ -17,9 +18,10 @@ export const InfoContinent = ({ dataContinent, title }: InfoContinentProps) => {
         {dataContinent}
       </Text>
       <Text
+        as="span"
         textAlign="center"
         fontWeight="medium"
-        fontSize="24px"
+        fontSize={["18px", "24px"]}
         color="gray.600"
       >
         {title}

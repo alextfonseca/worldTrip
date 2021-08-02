@@ -26,10 +26,20 @@ export const SliderContent = ({
         }}
       >
         <Link href={hrefLink}>
-          <Text fontSize="48px" fontWeight="bold" color="whiteAlpha.100">
+          <Text
+            as="p"
+            fontSize={["24px", "36px", "48px"]}
+            fontWeight="bold"
+            color="whiteAlpha.100"
+          >
             {title}
           </Text>
-          <Text fontSize="24px" fontWeight="bold" color="whiteAlpha.200">
+          <Text
+            as="span"
+            fontSize={["14px", "22px", "24px"]}
+            fontWeight="bold"
+            color="whiteAlpha.200"
+          >
             {subtitle}
           </Text>
         </Link>

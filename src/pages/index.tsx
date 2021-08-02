@@ -1,14 +1,15 @@
+import Head from "next/head";
 import { Box, Divider, Flex, Text, Link, Button } from "@chakra-ui/react";
 import { Banner } from "../components/banner/Banner";
 import { Header } from "../components/header/Header";
 import { TravelTypes } from "../components/travelTypes/TravelTypes";
+
 import { GetStaticProps } from "next";
 import { api } from "../services/api";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SliderContent } from "../components/slider/SliderContent";
-// import Swiper core and required modules
+
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -16,7 +17,6 @@ import SwiperCore, {
   Keyboard,
 } from "swiper/core";
 
-// install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 interface dataContinentProps {
@@ -33,11 +33,11 @@ interface continentData {
 export default function Home({ dataContinent }: continentData) {
   return (
     <div id="topo">
-      <head>
+      <Head>
         <title>WorldTrip | Home</title>
-      </head>
+      </Head>
       <main>
-        <Flex maxWidth={1440} m="auto" direction="column">
+        <Flex m="auto" direction="column" width="100%">
           <Header />
           <Banner />
           <TravelTypes />
@@ -46,7 +46,7 @@ export default function Home({ dataContinent }: continentData) {
             as="h2"
             textAlign="center"
             my="52px"
-            fontSize="36px"
+            fontSize={["20px", "26px", "36px"]}
             fontWeight="600"
             color="gray.700"
           >
@@ -54,7 +54,7 @@ export default function Home({ dataContinent }: continentData) {
             Então escolha seu continente
           </Text>
 
-          <Box mb="50" height={600} width="100%">
+          <Box mb="50" height={600} width={["100%", "100%", "90%"]} m="auto">
             <Swiper
               cssMode={true}
               navigation={true}

@@ -12,9 +12,9 @@ export function TooltipText({
   tooltipText,
 }: TooltipTextProps) {
   return (
-    <Box>
+    <Box p="4">
       <Text
-        fontSize="48px"
+        fontSize={["24px", "36px", "48px"]}
         fontWeight="medium"
         color="yellow.200"
         textAlign="center"
@@ -23,10 +23,10 @@ export function TooltipText({
       </Text>
       <Flex>
         <Text
-          mr="2"
+          mr={["0", "2"]}
           textAlign="center"
           fontWeight="medium"
-          fontSize="24px"
+          fontSize={["18px", "24px"]}
           color="gray.600"
         >
           {title}
